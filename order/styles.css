@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f9ff;
+  /* Light grey */
+  color: #343a40;
+  /* Dark grey */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #343a40;
+  /* Dark grey */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+  /* White */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  /* White */
+}
+
+.navbar-nav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  /* Yellow */
+}
+
+
+/* Menu Item Styles */
+.menu-item .card {
+  transition: transform 0.3s ease;
+}
+
+.menu-item .card:hover {
+  transform: translateY(-10px);
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #fff;
+  /* White */
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #343a40;
+  /* Dark grey */
+  color: #fff;
+  /* White */
+  border-bottom: none;
+}
+
+.modal-body img {
+  border-radius: 15px;
+}
+
+/* Testimonials Blockquote Styles */
+.blockquote {
+  border-left: 7px solid #ffc107;
+  /* Yellow */
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Gallery Styles */
+#gallery img {
+  border-radius: 15px;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form Styles */
+.form-control {
+  border-radius: 15px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #343a40;
+  /* Dark grey */
+  color: #fff;
+  /* White */
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  /* Yellow */
+}
+
+.footer a:hover {
+  background-color: #ffffff;
+  /* White */
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  display: none;
+  font-size: 24px;
+  background-color: #007bff;
+  /* Yellow */
+  color: #ffffff;
+  /* Dark grey */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+#back-to-top:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* background-color: #ffa500; Orange */
+}
+
+.checked {
+  color: orange;
+}
+
+
+.mobile-footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #007bff;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+
+}
+
+.mobile-footer-nav .nav-item {
+  text-align: center;
+  color: white;
+}
+
+.mobile-footer-nav .nav-item .nav-link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-footer-nav .nav-item .nav-link i {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.mobile-footer-nav .nav-item .nav-link span {
+  font-size: 12px;
+}
+
+
+.Testimonials {
+  border-radius: 30px;
+}
+
+
+.FAQ img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.FAQ button {
+  /* background-color: #18d476ff; */
+  /* color: #ffffff; */
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 2px dashed green;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  /* background-color: var(--bs-accordion-active-bg); */
+  box-shadow: inset 0 calc(-1* white) 0 white;
+}
+
+@media screen and (max-width: 768px) {
+  footer{
+    margin-top: 20px;
+  display: none;
+}
+}
+
+

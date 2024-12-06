@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online fooding</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand fs-3 ms-4" href="#">Dhosa Hub</a>
+    <!-- <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#testmonials">Testimonial</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link active" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div id="productCarousel" class="carousel slide" data-ride="carousel"></div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="service.png" class="d-block w-100" alt="Featured Item 1">
+      </div>
+    </div>
+  </section>
+  <div id="menu" class="container-fluied m-4 pt-1">
+    <h2 class="mt-3 mb-4 text-center" id="menu">Dosa Menu</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="Masala-Dosa.jpg" class="card-img-top img-fluid" alt="Masala Dosa" width="50%">
+          <div class="card-body">
+            <h5 class="card-title">Masala Dosa</h5>
+            <p class="card-text">A crispy dosa filled with a spicy mashed potato filling. Served with sambar and
+              chutney.</p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+              <a href="#">
+                <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="plain-Dosa.jpg" class="card-img-top img-fluid" alt="Plain Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Plain Dosa</h5>
+            <p class="card-text">A simple, crispy Plain dosa served with sambar and chutney. Perfect for any time of the
+              day.
+            </p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="Rava Dosa.jpg" class="card-img-top img-fluid" alt="Rava Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Rava Dosa</h5>
+            <p class="card-text">A semolina-based dosa that is crispy and flavorful Dosa. Served with sambar and
+              chutney.</p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="Set Dosa.jpg" class="card-img-top img-fluid" alt="Set Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Set Dosa</h5>
+            <p class="card-text">Soft, fluffy Set dosas usually served in a set of three. Accompanied by sambar and
+              chutney.
+            </p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="Onion Dosa.jpg" class="card-img-top img-fluid" alt="Onion Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Onion Dosa</h5>
+            <p class="card-text">A crispy dosa topped with finely chopped onion Dosa. Served with sambar and chutney.
+            </p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="Cheese Dosa.jpg" class="card-img-top img-fluid" alt="Cheese Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Cheese Dosa</h5>
+            <p class="card-text">A modern twist to the traditional dosa, topped with melted cheese. Served with sambar
+              and chutney.</p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="gini dhosa.jpg" class="card-img-top img-fluid" alt="Cheese Dosa">
+          <div class="card-body">
+            <h5 class="card-title">jini Dosa</h5>
+            <p class="card-text">A popular street food from Mumbai, Jini Dosa is a fusion of dosa and Chinese flavors.</p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-sm-6">
+        <div class="card mb-4 shadow-sm">
+          <img src="mysore.png" class="card-img-top img-fluid" alt="Cheese Dosa">
+          <div class="card-body">
+            <h5 class="card-title">Mysore Dosa</h5>
+            <p class="card-text">A variant of the traditional Mysore dosa, with a spicy red chutney spread inside the
+              Mysore dosa.</p>
+            <p class="price text-primary h5 mb-3">₹199</p>
+            <a href="#">
+              <button class="btn btn-primary btn-block">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Gallery Section -->
+  <div class="container-fluied m-4 mt-5">
+    <h2 class="mb-4 text-center">Gallery</h2>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-lg-3">
+        <img src="gall.jpg" class="card-img-top img-fluid mb-3" alt="Masala Dosa" width="50%">
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-3">
+        <img src="gall2.jpg" alt="Dosa 2" class="img-fluid mb-3">
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-3">
+        <img src="gall3.jpg" alt="Dosa 3" class="img-fluid mb-3">
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-3">
+        <img src="gall4.jpg" alt="Dosa 1" class="img-fluid mb-3">
+      </div>
+    </div>
+  </div>
+  <section>
+    <!-- Swiper -->
+    <section id="testmonials" class="pt-1">
+      <h2 class="text-center mt-4 mb-4">Testimonial</h2>
+      <div class="container-fluied ms-5 me-5 mb-5 mt-3">
+        <div class="swiper card-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="testi-1.jpg" alt="Project 1" class="img-fluid">
+                  <h4 class="card-title pt-3 h5">Alice Smith</h5>
+                    <!-- <p class="text-secondary">Sr. UX/UI Designer</p> -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="card-text mt-2">"Absolutely loved the Masala dosa!"</p>
+                    <p class="review-date">Reviewed on June 8, 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="testi-2.jpg" alt="Project 2" class="img-fluid">
+                  <h4 class="card-title pt-3 h5">Bob Johnson</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="card-text mt-2">"Great taste and texture,The sambar was perfect."
+                    </p>
+                    <p class="review-date">Reviewed on June 7, 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="testi-3.jpg" alt="Project 3" class="img-fluid">
+                  <h4 class="card-title pt-3 h5">Carla Brown</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="card-text mt-2">"Best dosa I've had in a long time."</p>
+                    <p class="review-date">Reviewed on June 6, 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="testi-1.jpg" alt="Project 3" class="img-fluid">
+                  <h4 class="card-title pt-3 h5">David Wilson</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="card-text mt-2">"Delicious and authentic."
+                    </p>
+                    <p class="review-date">Reviewed on June 5, 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <div class="card-body">
+                  <img src="testi-2.jpg" alt="Project 3" class="img-fluid">
+                  <h4 class="card-title pt-3 h5">Emma Davis</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p class="card-text mt-2">"Very tasty and satisfying"</p>
+                    <p class="review-date">Reviewed on June 4, 2024</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    </section>
+
+
+    <section>
+      <div class="FAQ">
+        <h2 class="text-center mt-3">Frequently Asked Questions
+        </h2>
+
+        <div class="container align-item-center mt-1">
+          <div class="row  ps-3 pt-1">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-lg-2">
+              <img src="faq.jpg" alt="" class="img-thumbnail">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+              <!-- <h5 style="color: #00aa00;">FAQ</h5> -->
+              <h4 style="color: #212529; font-weight: 600; font-size: 2rem;">Help Centre Support</h4>
+              <div class="accordion pt-4" id="accordionExample">
+                <div>
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed h3 me-5" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How do I place an order?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>To place an order, simply browse our menu, add items to your cart, and proceed to checkout. You
+                        will need to provide your delivery address and payment details to complete the order.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What payment methods do you accept?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>We accept various payment methods including credit/debit cards, online banking, and popular
+                      digital wallets such as PayPal and Google Pay.
+                    </p>
+
+                  </div>
+                </div>
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How can I contact customer support?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>You can reach our customer support team via phone, email, or live chat. Our contact details are
+                      available on the 'Contact Us' page of our website.
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="container-fluied m-5">
+      <h2 class="mb-4 text-center">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <!-- <h2 class="text-center mb-4">Our Location</h2> -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.689288991516!2d72.63070531502111!3d23.215635914778134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39580446b3983d8f%3A0x1f8d8aa9e4b72a8b!2sGandhinagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1623052029290!5m2!1sen!2sin"
+              allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <!-- <h2 class="mb-5 text-center">Contact Us</h2> -->
+          <form>
+            <!-- <h5 style="color: #00aa00;">Contact Us</h5> -->
+            <!-- <h1 class="mb-4 text-dark">Get In Touch</h1> -->
+            <h1 style="color: #212529; font-weight: 600; font-size: 2.7rem;" class="mt-4">Get In Touch</h1>
+            <p class="fs-6 mt-4 text-secondary" style="margin-bottom: 20px; line-height: 2;">We offer a variety of delicious dosas made
+              with authentic ingredients and traditional recipes.<br> For more details, feel free to reach out to us.
+            </p>
+            <h5 style="font-weight: 400;"><i class="fa fa-mobile-phone fa-lg mt-2" style="font-size: 2.5rem;"></i> +0123
+              456 7890</h5>
+            <h5 style="font-weight: 400;"><i class="fa fa-envelope mt-2"></i> contact@dosarestaurants.com</h5>
+            <h5 class="mb-5" style="font-weight: 400;"><i class="fa fa-comment mt-2"></i> Chat With Us</h5>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+      <div class="container-fluid bg-primary text-white text-center">
+        <p style="font-size: larger;">&copy; 2024 Your Company. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <nav class="mobile-footer-nav d-lg-none mt-5">
+      <div class="nav-item">
+        <a class="nav-link active" href="#">
+          <i class="bi bi-house-door"></i>Home
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="#menu">
+          <i class="bi bi-list"></i>Menu
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="#testmonials">
+          <i class="bi bi-chat-left-quote"></i>Testimonials
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="#contact">
+          <i class="bi bi-telephone"></i>Contact
+        </a>
+      </div>
+
+    </nav>
+
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#" class="btn btn-light back-to-top" role="button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Smooth scrolling
+        $('a[href^="#"]').on('click', function (event) {
+          var target = $(this.getAttribute('href'));
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+              scrollTop: target.offset().top
+            }, 1000);
+          }
+        });
+
+        // Back to top button
+        var backToTopButton = $("#back-to-top");
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            backToTopButton.fadeIn();
+          } else {
+            backToTopButton.fadeOut();
+          }
+        });
+        backToTopButton.on('click', function () {
+          $("html, body").animate({
+            scrollTop: 0
+          }, 1000);
+          return false;
+        });
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".card-slider", {
+        //   slidesPerView: 3,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            //   spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 2,
+            //   spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            //   spaceBetween: 40,
+          },
+
+          1024: {
+            slidesPerView: 3,
+            //   spaceBetween: 50,
+          },
+          1200: {
+            slidesPerView: 3,
+            //   spaceBetween: 50,
+          },
+        },
+
+      });
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
